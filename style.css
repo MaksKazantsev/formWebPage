@@ -1,0 +1,129 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Libre Franklin', sans-serif;
+}
+body {
+    width: 100%;
+    min-height: 100vh;
+}
+.container {
+    width: 100%;
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.title h1 {
+    font-size: 3.2em;
+    font-weight: 300;
+    padding: 20px;
+}
+.title p {
+    text-align: center;
+    font-weight: 600;
+}
+.input-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 40%;
+    margin-bottom: 100px;
+}
+.input-container input {
+    width: 70%;
+    border-radius: 20px;
+    outline: none;
+    padding: 15px 20px;
+    border: 1px solid black;
+}
+.input-container button {
+    width: 30%;
+    background: hsl(223, 87%, 63%);
+    border-radius: 30px;
+    padding: 15px 20px;
+    color: white;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+.illustration {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.illustration img {
+    width: 100%;
+}
+.social {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.icons {
+    display: flex;
+    gap: 10px;
+    color: hsl(223, 87%, 63%);
+}
+.icons i {
+    border: 1px solid grey;
+    padding: 10px 10px;
+    border-radius: 50%;
+}
+.social-text {
+    color: grey;
+    font-weight: 300;
+    font-size: 15px;
+}
+.input-container.success input {
+    border-color: hsl(154, 59%, 51%);
+}
+.input-container.error input {
+    border-color: hsl(0, 100%, 74%);
+}
+.error {
+    color: hsl(0, 100%, 74%);
+    font-style: italic;
+}
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        padding: 100px 10px;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+    .title h1 {
+        font-size: 2em;
+        font-weight: 300;
+    }
+    .input-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+        gap: 9px;
+        margin-bottom: 50px;
+    }
+    .input-container input {
+        width: 80%;
+    }
+    .input-container button {
+        width: 80%;
+    }
+    .illustration {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .illustration img {
+        width: 90%;
+    }
+}
+
